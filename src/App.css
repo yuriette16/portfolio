@@ -6,6 +6,7 @@
 
 .container {
   text-align: center;
+  
 }
 .banner-wrapper{
   height: 70vh;
@@ -39,7 +40,6 @@
   margin-top: 48px;
   padding: 10px;
 }
-
 
 /*
 .App-logo {
