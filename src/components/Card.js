@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
+import CardIntroduction from './cards/CardIntroduction'
+
 class Card extends Component {
-    render () { 
+    render () {
         const { content } = this.props;
 
         const getTitle = () => {
@@ -14,9 +16,12 @@ class Card extends Component {
         };
 
         return (
-            
-            <div className=""> 
-                <div class="card-title">{getTitle()}</div>
+
+            <div className="card-wrapper">
+                <div className="card-title">
+                    { getTitle() }
+                    { content === "whoAmI" && <CardIntroduction /> }
+                </div>
             </div>
 
         );

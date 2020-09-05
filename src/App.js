@@ -9,8 +9,8 @@ class App extends Component {
   render(){
     return (
       <div className="wrapper">
+        <Banner />
         <div className="container">
-          <Banner />
           <Card content={"whoAmI"} />
           <Card content={"mySkill"}/>
         </div>  
