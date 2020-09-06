@@ -4,6 +4,7 @@ import './App.css';
 
 import Banner from './components/Banner';
 import Card from './components/Card';
+import Footer from './components/Footer';
 
 class App extends Component {
   render(){
@@ -13,7 +14,8 @@ class App extends Component {
         <div className="container">
           <Card content={"whoAmI"} />
           <Card content={"mySkill"}/>
-        </div>  
+        </div>
+        <Footer />
       </div>
     );
   }

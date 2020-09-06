@@ -19,7 +19,7 @@ class Card extends Component {
 
             <div className="card-wrapper">
                 <div className="card-title">
-                    { getTitle() }
+                    <div className="card-title-header">{ getTitle() }</div>
                     { content === "whoAmI" && <CardIntroduction /> }
                 </div>
             </div>

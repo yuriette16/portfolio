@@ -8,6 +8,7 @@
 .container {
   text-align: center;
   margin: 0 10%;
+  color: #73797B;
 }
 
 .banner-wrapper{
@@ -47,21 +48,32 @@
   background-color: white;
 }
 
+.card-title-header{
+  font-weight: bold;
+  color: #61686B;
+  font-size: 32px;
+  padding: 32px 0;
+}
+
 .profile-img img{
   width: 300px;
   height: 337px;
   object-fit: cover;
   border-radius: 50%;
+  margin: 0 24px;
 }
 
 .profile-wrapper{
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 32px;
 }
 
 .mydescription{
   align-self: center;
   text-align: left;
+  font-size: 20px;
 }
 
 /*
