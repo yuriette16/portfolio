@@ -1,0 +1,18 @@
+.gif-wrapper{
+    background: black;
+    display: inline-block;
+    position: relative;
+}
+
+.project-gif{
+    opacity: 50%;
+}
+
+.project-name{
+    position: absolute;
+    left: 3%;
+    color:white;
+    font-weight: bold;
+    z-index: 1;
+    font-size: 20px;
+}

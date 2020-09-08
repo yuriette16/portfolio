@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
 import CardIntroduction from './cards/CardIntroduction'
+import CardProjectList from './cards/CardProjectList'
 
 class Card extends Component {
     render () {
@@ -10,8 +11,8 @@ class Card extends Component {
         const getTitle = () => {
             if (content === "whoAmI") {
                 return "WHO I AM";
-            } else if (content === "mySkill") {
-                return "What I can do";
+            } else if (content === "myproject") {
+                return "What I create";
             }
         };
 
@@ -21,6 +22,7 @@ class Card extends Component {
                 <div className="card-title">
                     <div className="card-title-header">{ getTitle() }</div>
                     { content === "whoAmI" && <CardIntroduction /> }
+                    { content === "myproject" && <CardProjectList />}
                 </div>
             </div>
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './style/App.css';
 
 import Banner from './components/Banner';
 import Card from './components/Card';
@@ -12,8 +12,8 @@ class App extends Component {
       <div className="wrapper">
         <Banner />
         <div className="container">
-          <Card content={"whoAmI"} />
-          <Card content={"mySkill"}/>
+          <Card content="whoAmI" />
+          <Card content="myproject" />
         </div>
         <Footer />
       </div>
