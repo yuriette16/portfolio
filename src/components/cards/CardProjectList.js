@@ -21,7 +21,7 @@ class CardProjectList extends Component {
                     projectSkill={["Ruby on rails", "JS", "HTML", "CSS", "Git"]} 
                     projectRole="Front End Developer"
                     projectDescription="THis is Cookpal"
-                    projecGif="https://media.giphy.com/media/W2j6OXFeevVorGCSwd/giphy.gif"
+                    projectGif="https://media.giphy.com/media/W2j6OXFeevVorGCSwd/giphy.gif"
                 />
             </div>
 
@@ -30,6 +30,3 @@ class CardProjectList extends Component {
 }
 
 export default CardProjectList;
-
-
-
