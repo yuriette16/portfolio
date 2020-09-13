@@ -4,6 +4,7 @@ import Modal from '@material-ui/core/Modal';
 import { withStyles } from '@material-ui/core/styles';
 
 import '../../style/Project.css';
+import * as Constants from './../../Constants.js'
 
 const styles = (theme) => ({
     paper: {
@@ -29,16 +30,15 @@ class Project extends Component {
     render () {
 
         const { projectName, projectSkill, projectRole, projectDescription, projectGif, classes } = this.props;
+        const icons = Constants.Icons;
 
         const closeProjectModal = () => {
-            console.log("aaaaaa");
             this.setState({
                 open: false
              });
         };
         
         const displayProjectModal = () =>  {
-            console.log("bbbb");
             this.setState({
                open: true  
             });
@@ -47,9 +47,6 @@ class Project extends Component {
         return (
             <div>
                 <div className="project" onClick={ displayProjectModal } >
-                    <div>{ projectSkill }</div>
-                    <div>{ projectRole }</div>
-                    <div>{ projectDescription }</div>
                     <div className="gif-wrapper">
                         <div className="project-name">{ projectName }</div>
                         <img src={ projectGif } className="project-gif"></img>
@@ -65,6 +62,10 @@ class Project extends Component {
                 >
                     <div className={classes.paper}> 
                         <h2 id="transition-modal-title">{ projectName }</h2>
+                        <div>{ projectSkill }</div>
+                        <div>{ projectRole }</div>
+                        <div>{ projectDescription }</div>
+                        <div>{icons.JS, icons.HTML, icons.CSS, icons.WATSON, icons.RAILS, icons.GIT }</div>
                     </div>
                 </Modal>
             </div>
