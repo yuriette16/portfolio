@@ -8,6 +8,7 @@
     opacity: 50%;
     width: 400px;
     height: auto;
+    cursor: pointer;
 }
 
 .project-name{
