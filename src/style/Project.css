@@ -1,0 +1,31 @@
+.gif-wrapper{
+    background: black;
+    display: inline-block;
+    position: relative;
+}
+
+.project-gif{
+    opacity: 50%;
+    width: 400px;
+    height: auto;
+    cursor: pointer;
+}
+
+.project-name{
+    position: absolute;
+    left: 3%;
+    color:white;
+    font-weight: bold;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.project-list{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 32px
+}
+
+.project{
+    margin: 0 16px;
+}
