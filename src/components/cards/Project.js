@@ -44,6 +44,12 @@ class Project extends Component {
             });
        };
 
+    //    const displayIcons = () => {
+    //         projectSkill.map((skill) => {
+    //             return icons[`${skill}`];
+    //         });
+    //    };
+
         return (
             <div>
                 <div className="project" onClick={ displayProjectModal } >
@@ -65,7 +71,11 @@ class Project extends Component {
                         <div>{ projectSkill }</div>
                         <div>{ projectRole }</div>
                         <div>{ projectDescription }</div>
-                        <div>{icons.JS, icons.HTML, icons.CSS, icons.WATSON, icons.RAILS, icons.GIT }</div>
+                        <div className="project-icons">
+                            { projectSkill.map((skill) => {
+                                return icons[`${ skill }`];
+                            }) }
+                        </div>
                     </div>
                 </Modal>
             </div>

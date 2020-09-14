@@ -11,7 +11,7 @@ class CardProjectList extends Component {
             <div className="project-list">
                 <Project 
                     projectName="Simplicruit" 
-                    projectSkill={["Ruby on rails", "JS", "Watson", "HTML", "CSS", "Git"]}
+                    projectSkill={["RAILS", "JS", "WATSON", "HTML", "CSS", "GIT"]}
                     projectRole="Full Stack Developer"
                     projectDescription="This is simplicruit"
                     projectGif="https://media.giphy.com/media/W2j6OXFeevVorGCSwd/giphy.gif"
