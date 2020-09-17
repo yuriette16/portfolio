@@ -6,10 +6,11 @@ import { withStyles } from '@material-ui/core/styles';
 import '../../style/Project.css';
 import * as Constants from './../../Constants.js'
 
+
 const styles = (theme) => ({
     paper: {
       position: 'absolute',
-      width: 800,
+      width: '64%',
       backgroundColor: theme.palette.background.paper,
       outline: 'none',
       border: '4px solid rgb(195,155,162)',
@@ -29,7 +30,7 @@ class Project extends Component {
 
     render () {
 
-        const { projectName, projectSkill, projectRole, projectDescription, projectGif, classes } = this.props;
+        const { projectName, projectSkill, projectRole, projectDescription, projectGif, projectVideo, projectSnapshot, classes } = this.props;
         const icons = Constants.Icons;
 
         const closeProjectModal = () => {
@@ -68,13 +69,22 @@ class Project extends Component {
                 >
                     <div className={classes.paper}> 
                         <h2 id="transition-modal-title">{ projectName }</h2>
-                        <div>{ projectRole }</div>
-                        <div>{ projectDescription }</div>
-                        <div className="project-icons">
-                            { projectSkill.map((skill) => {
-                                return icons[`${ skill }`];
-                            }) }
-                        </div>
+                        <div className="projectcard-flex">
+                            <div className="project-detail">
+                                <div>{ projectRole }</div>
+                                <div>{ projectDescription }</div>
+                                <div className="project-icons">
+                                    { projectSkill.map((skill) => {
+                                        return icons[`${ skill }`];
+                                    }) }
+                                </div>
+                            </div>
+                            <div className="project-video">
+                                <video controls className="video" Autoplay="autoplay" >
+                                    <source src={ projectVideo } type="video/mp4"/>
+                                </video>
+                            </div> 
+                        </div>    
                     </div>
                 </Modal>
             </div>

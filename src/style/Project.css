@@ -29,3 +29,14 @@
 .project{
     margin: 0 16px;
 }
+
+#transition-modal-title{
+    margin: 4px 0;
+}
+
+.video {
+    height: 100%;
+    width: 100%; 
+    outline: none;
+  }
+  

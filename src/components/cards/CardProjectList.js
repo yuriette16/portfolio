@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
 import Project from './Project';
+import video from './../../image/simplicruit.mov';
+import snapshot from './../../image/simplicruit.png';
 
 class CardProjectList extends Component {
     render () {
@@ -15,6 +17,8 @@ class CardProjectList extends Component {
                     projectRole="Full Stack Developer"
                     projectDescription="This is simplicruit"
                     projectGif="https://media.giphy.com/media/W2j6OXFeevVorGCSwd/giphy.gif"
+                    projectVideo={ video }
+                    projectSnapshot={ snapshot }
                 />
                 <Project 
                     projectName="Cookpal" 
@@ -22,6 +26,8 @@ class CardProjectList extends Component {
                     projectRole="Front End Developer"
                     projectDescription="THis is Cookpal"
                     projectGif="https://media.giphy.com/media/W2j6OXFeevVorGCSwd/giphy.gif"
+                    projectVideo={ video }
+                    projectSnapshot={ snapshot }
                 />
             </div>
 
