@@ -14,6 +14,7 @@ class App extends Component {
         <div className="container">
           <Card content="whoAmI" />
           <Card content="myproject" />
+          <Card content="mycooking" />
         </div>
         <Footer />
       </div>

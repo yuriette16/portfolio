@@ -15,7 +15,7 @@ class CardProjectList extends Component {
                     projectName="Simplicruit" 
                     projectSkill={["RAILS", "JS", "WATSON", "HTML", "CSS", "GIT"]}
                     projectRole="Full Stack Developer"
-                    projectDescription="This is simplicruit"
+                    projectDescription="Simplicruit is an online interview and review platform powered by AI."
                     projectGif="https://media.giphy.com/media/W2j6OXFeevVorGCSwd/giphy.gif"
                     projectVideo={ video }
                     projectSnapshot={ snapshot }
@@ -24,7 +24,7 @@ class CardProjectList extends Component {
                     projectName="Cookpal" 
                     projectSkill={["Ruby on rails", "JS", "HTML", "CSS", "Git"]} 
                     projectRole="Front End Developer"
-                    projectDescription="THis is Cookpal"
+                    projectDescription="Cookpal is a platform to hire personal shef at your own place."
                     projectGif="https://media.giphy.com/media/W2j6OXFeevVorGCSwd/giphy.gif"
                     projectVideo={ video }
                     projectSnapshot={ snapshot }

@@ -72,7 +72,7 @@ class Project extends Component {
                         <div className="projectcard-flex">
                             <div className="project-detail">
                                 <div>{ projectRole }</div>
-                                <div>{ projectDescription }</div>
+                                <div className="project-description">{ projectDescription }</div>
                                 <div className="project-icons">
                                     { projectSkill.map((skill) => {
                                         return icons[`${ skill }`];

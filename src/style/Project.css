@@ -40,3 +40,11 @@
     outline: none;
   }
   
+.projectRole{
+    padding-left: 4px;
+    padding-bottom: 4px;
+}
+
+.project-description{
+    margin-top: 12px;   
+}
