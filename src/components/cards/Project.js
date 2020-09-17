@@ -68,7 +68,6 @@ class Project extends Component {
                 >
                     <div className={classes.paper}> 
                         <h2 id="transition-modal-title">{ projectName }</h2>
-                        <div>{ projectSkill }</div>
                         <div>{ projectRole }</div>
                         <div>{ projectDescription }</div>
                         <div className="project-icons">
