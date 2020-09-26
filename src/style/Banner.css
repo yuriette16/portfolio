@@ -4,13 +4,36 @@
     padding-top: 30vh;
   }
   
-  #myname{
+#myname{
     padding: 16px 8px;
     font-weight: bold;
     font-size: 32px;
   }
   
-  #job-title{
+#job-title{
     font-size: 24px;
     padding: 16px 8px;
   }
+
+.list-links{
+  display: inline;
+  list-style: none;
+  }
+
+.link-button{
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+ul > li{
+  display: inline-block;
+} 
+
+li:not(:first-child):before {
+  content: '/';
+  padding: 0 12px 0 9px;
+}
