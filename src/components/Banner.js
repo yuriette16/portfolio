@@ -8,12 +8,11 @@ class Banner extends Component {
             <div className="banner-wrapper">
                 <div id="myname">YURIE SHIOTANI</div>
                 <div id="job-title">Front-End Engineer | Cloud Application Engineer | Cooking Lover</div>
-                <div>
-                    <i className="fab fa-linkedin-in"></i>
-                    <i className="fab fa-github"></i>
-                    <i className="fab fa-instagram"></i>
-                </div>
-                <button className="btn-radius">See my work</button>
+                <ul>
+                    <li><a className="underlined" href="">About</a></li>
+                    <li><a className="underlined" href="">Work</a></li>
+                    <li><a className="underlined" href="">Cook</a></li>
+                </ul>
             </div>
         );
     }
