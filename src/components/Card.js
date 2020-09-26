@@ -15,7 +15,7 @@ class Card extends Component {
             } else if (content === "myproject") {
                 return "What I create";
             } else if (content === "mycooking") {
-                return "What I cook/teach"
+                return "What I cook"
             }
         };
 
