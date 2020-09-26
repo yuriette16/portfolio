@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import CardIntroduction from './cards/CardIntroduction'
 import CardProjectList from './cards/CardProjectList'
+import CardCooking from './cards/CardCooking'
 
 class Card extends Component {
     render () {
@@ -13,6 +14,8 @@ class Card extends Component {
                 return "WHO I AM";
             } else if (content === "myproject") {
                 return "What I create";
+            } else if (content === "mycooking") {
+                return "What I cook"
             }
         };
 
@@ -22,7 +25,8 @@ class Card extends Component {
                 <div className="card-title">
                     <div className="card-title-header">{ getTitle() }</div>
                     { content === "whoAmI" && <CardIntroduction /> }
-                    { content === "myproject" && <CardProjectList />}
+                    { content === "myproject" && <CardProjectList /> }
+                    { content === "mycooking" && <CardCooking />}  
                 </div>
             </div>
 

@@ -23,9 +23,29 @@
 .project-list{
     display: flex;
     justify-content: center;
-    padding-bottom: 32px
+    padding-bottom: 32px;
+    border-bottom: 1px solid #DDDDDD;
 }
 
 .project{
     margin: 0 16px;
+}
+
+#transition-modal-title{
+    margin: 4px 0;
+}
+
+.video {
+    height: 100%;
+    width: 100%; 
+    outline: none;
+  }
+  
+.projectRole{
+    padding-left: 4px;
+    padding-bottom: 4px;
+}
+
+.project-description{
+    margin-top: 12px;   
 }

@@ -1,0 +1,19 @@
+.fab{
+    font-size: 30px;
+    padding-top: 8px; 
+    color: white;
+    text-decoration: none;
+  }
+
+.fab:hover{
+    color: #404040;
+}
+
+.profile-icons{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: 3%;
+    z-index: 1;
+}

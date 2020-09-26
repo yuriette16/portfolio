@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
 import Project from './Project';
+import video from './../../image/simplicruit.mov';
+import snapshot from './../../image/simplicruit.png';
 
 class CardProjectList extends Component {
     render () {
@@ -11,17 +13,21 @@ class CardProjectList extends Component {
             <div className="project-list">
                 <Project 
                     projectName="Simplicruit" 
-                    projectSkill={["Ruby on rails", "JS", "Watson", "HTML", "CSS", "Git"]}
+                    projectSkill={["RAILS", "JS", "WATSON", "HTML", "CSS", "GIT"]}
                     projectRole="Full Stack Developer"
-                    projectDescription="This is simplicruit"
+                    projectDescription="Simplicruit is an online interview and review platform powered by AI."
                     projectGif="https://media.giphy.com/media/W2j6OXFeevVorGCSwd/giphy.gif"
+                    projectVideo={ video }
+                    projectSnapshot={ snapshot }
                 />
                 <Project 
                     projectName="Cookpal" 
                     projectSkill={["Ruby on rails", "JS", "HTML", "CSS", "Git"]} 
                     projectRole="Front End Developer"
-                    projectDescription="THis is Cookpal"
+                    projectDescription="Cookpal is a platform to hire personal shef at your own place."
                     projectGif="https://media.giphy.com/media/W2j6OXFeevVorGCSwd/giphy.gif"
+                    projectVideo={ video }
+                    projectSnapshot={ snapshot }
                 />
             </div>
 
